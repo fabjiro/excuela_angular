@@ -1,8 +1,17 @@
-<nav>
-  <ul>
-    <li><a routerLink="/interactive-chart">Interactive Chart</a></li>
-    <li><a routerLink="/live-chat">Live Chat</a></li>
-    <li><a routerLink="/custom-video-player">Custom Video Player</a></li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<!-- app.component.html -->
+<div class="h-screen w-screen flex flex-col">
+
+  <nav class="bg-blue-500 py-4">
+    <div class="container mx-auto">
+      <ul class="flex space-x-4 justify-center">
+        <li><a routerLink="/interactive-chart" class="text-white hover:text-gray-200 px-4 py-2 rounded-lg">Interactive Chart</a></li>
+        <li><a routerLink="/live-chat" class="text-white hover:text-gray-200 px-4 py-2 rounded-lg">Live Chat</a></li>
+        <li><a routerLink="/custom-video-player" class="text-white hover:text-gray-200 px-4 py-2 rounded-lg">Custom Video Player</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="flex-1">
+    <router-outlet></router-outlet>
+  </div>
+</div>

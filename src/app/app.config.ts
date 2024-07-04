@@ -6,7 +6,6 @@ import { BaseChartDirective } from 'ng2-charts';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    // provideRouter(routes),
     provideRouter(routes),
     importProvidersFrom(BaseChartDirective)
   ]
